@@ -1,44 +1,43 @@
-﻿{
-	"courseTitle": {
-		"Computer Science": {
-			"levelOfStudy": {
-				"MSc": {
-					"mode": [
-						{"modeOfStudy":"Full-time","lengthOfStudy":12},
-						{"modeOfStudy":"Part-time","lengthOfStudy":24}
-					]
-				},
-
-				"MSc with placement": {
-					"mode": [
-						{"modeOfStudy":"Full-time","lengthOfStudy":24},
-						{"modeOfStudy":"Part-time","lengthOfStudy":36}
-					]
-				},
-				
-				"PGDip": {
-					"mode": [
-						{"modeOfStudy":"Full-time","lengthOfStudy":6},
-						{"modeOfStudy":"Part-time","lengthOfStudy":18}
-					]
-				},
-				
-				"PGCert": {
-					"mode": [
-						{"modeOfStudy":"Full-time","lengthOfStudy":3},
-						{"modeOfStudy":"Part-time","lengthOfStudy":6}
-					]
-				}
+{
+	"course": {
+		"courseTitle": "Computer Science",
+		"level": [
+			{"levelOfStudy": "MSc",
+				"mode": [
+					{"modeOfStudy": "Full-time","lengthOfStudy": 12},
+					{"modeOfStudy": "Part-time","lengthOfStudy": 24}
+				]
 			},
-
-			"academicDepartment":["School of Engineering","Computing and Mathematics"],
-			"accreditation":"BCS accredited MSc (CITPFL, partial CEng)",
-			"courseDescription":"If your first degree is not in computing but you want to move into IT then our BCS accredited MSc in Computing Science is designed for you. Our course provides the basis for starting a career in computing and IT; teaching you the fundamentals of programming, hardware, networks and software engineering.\nThe course will enable you to develop a sound knowledge of computer software development for a range of problem areas, such as interactive websites, stand-alone applications and network systems. Because of its emphasis on software system construction and management, and data organisation, the qualification is applicable to a wide variety of fields concerned with using computers, as well as directly to the computer industry itself.",
-			"teachingLocation":"Wheatley Campus",
-			"dateStart":"September 2018 / September 2019",
-			"linkApply":"https://www.brookes.ac.uk/courses/postgraduate/computing/?acc=section-four#section-four-marker"
+		
+			{"levelOfStudy": "MSc with placement",
+				"mode": [
+					{"modeOfStudy": "Full-time","lengthOfStudy": 24},
+					{"modeOfStudy": "Part-time","lengthOfStudy": 36}
+				]
+			},
+		
+			{"levelOfStudy": "PGDip",
+				"mode": [
+					{"modeOfStudy": "Full-time","lengthOfStudy": 6},
+					{"modeOfStudy": "Part-time","lengthOfStudy": 18}
+				]
+			},
+		
+			{"levelOfStudy": "PGCert",
+				"mode": [
+					{"modeOfStudy":"Full-time","lengthOfStudy":3},
+					{"modeOfStudy":"Part-time","lengthOfStudy":6}
+				]
+			}
+		],
 			
-		}
+		"academicDepartment": ["School of Engineering","Computing and Mathematics"],
+		"accreditation": "BCS accredited MSc (CITPFL, partial CEng)",
+		"courseDescription": "If your first degree is not in computing but you want to move into IT then our BCS accredited MSc in Computing Science is designed for you. Our course provides the basis for starting a career in computing and IT; teaching you the fundamentals of programming, hardware, networks and software engineering.\nThe course will enable you to develop a sound knowledge of computer software development for a range of problem areas, such as interactive websites, stand-alone applications and network systems. Because of its emphasis on software system construction and management, and data organisation, the qualification is applicable to a wide variety of fields concerned with using computers, as well as directly to the computer industry itself.",
+		"teachingLocation": "Wheatley Campus",
+		"dateStart": "September 2018 / September 2019",
+		"linkApply": "https://www.brookes.ac.uk/courses/postgraduate/computing/?acc=section-four#section-four-marker"
+			
 	}
 }
 			
