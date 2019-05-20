@@ -1,30 +1,34 @@
 ﻿{
 	"courseTitle": {
 		"Computer Science": {
-			"level": {
-				"levelOfStudy":"MSc",
-				"mode": [
-					{"modeOfStudy":"Full-time","lengthOfStudy":12},
-				 	{"modeOfStudy":"Part-time","lengthOfStudy":24}
-				],
+			"levelOfStudy": {
+				"MSc": {
+					"mode": [
+						{"modeOfStudy":"Full-time","lengthOfStudy":12},
+						{"modeOfStudy":"Part-time","lengthOfStudy":24}
+					]
+				},
 
-				"levelOfStudy":"MSc with placement",
-				"mode": [
-					{"modeOfStudy":"Full-time","lengthOfStudy":24},
-					{"modeOfStudy":"Part-time","lengthOfStudy":36}
-				],
-
-				"levelOfStudy":"PGDip",
-				"mode": [
-					{"modeOfStudy":"Full-time","lengthOfStudy":6},
-					{"modeOfStudy":"Part-time","lengthOfStudy":18}
-				],
-
-				"levelOfStudy":"PGCert",
-				"mode": [
-					{"modeOfStudy":"Full-time","lengthOfStudy":3},
-					{"modeOfStudy":"Part-time","lengthOfStudy":6}
-				]
+				"MSc with placement": {
+					"mode": [
+						{"modeOfStudy":"Full-time","lengthOfStudy":24},
+						{"modeOfStudy":"Part-time","lengthOfStudy":36}
+					]
+				},
+				
+				"PGDip": {
+					"mode": [
+						{"modeOfStudy":"Full-time","lengthOfStudy":6},
+						{"modeOfStudy":"Part-time","lengthOfStudy":18}
+					]
+				},
+				
+				"PGCert": {
+					"mode": [
+						{"modeOfStudy":"Full-time","lengthOfStudy":3},
+						{"modeOfStudy":"Part-time","lengthOfStudy":6}
+					]
+				}
 			},
 
 			"academicDepartment":["School of Engineering","Computing and Mathematics"],
