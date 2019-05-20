@@ -38,21 +38,3 @@
 	}
 }
 			
-
-
-
-
-
-								
-
-
-
-
-
-# Prof. Hong Zhu's example	
-#"2 values for this key, "courseLength"
-{"courseLength":
-	[{"courseType":"MSc", "lengthOfStudy":12},
-	 {"courseType":"PGDip", "length":6}
-	]
-}
