@@ -1,0 +1,48 @@
+﻿{
+	"courseTitle": {
+		"Computer Science": {
+			"level": {
+				"levelOfStudy":"MSc",
+				"mode": [
+					{"modeOfStudy":"Full-time","lengthOfStudy":12},
+				 	{"modeOfStudy":"Part-time","lengthOfStudy":24}
+				],
+
+				"levelOfStudy":"MSc with placement",
+				"mode": [
+					{"modeOfStudy":"Full-time","lengthOfStudy":24},
+					{"modeOfStudy":"Part-time","lengthOfStudy":36}
+				],
+
+				"levelOfStudy":"PGDip",
+				"mode": [
+					{"modeOfStudy":"Full-time","lengthOfStudy":6},
+					{"modeOfStudy":"Part-time","lengthOfStudy":18}
+				],
+
+				"levelOfStudy":"PGCert",
+				"mode": [
+					{"modeOfStudy":"Full-time","lengthOfStudy":3},
+					{"modeOfStudy":"Part-time","lengthOfStudy":6}
+				]
+			},
+
+			"academicDepartment":["School of Engineering","Computing and Mathematics"]
+
+
+
+
+
+								
+
+
+
+
+
+# Prof. Hong Zhu's example	
+#"2 values for this key, "courseLength"
+{"courseLength":
+	[{"courseType":"MSc", "lengthOfStudy":12},
+	 {"courseType":"PGDip", "length":6}
+	]
+}
