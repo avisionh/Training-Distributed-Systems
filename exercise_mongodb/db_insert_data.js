@@ -7,6 +7,10 @@
 //				 4. Views the collections in a pretty format to ensure
 //					 we have entered data into them.
 
+// Useful Links:
+//				 1. https://blog.kevinchisholm.com/javascript/mongodb/getting-started-with-mongo-shell-scripting-basic-crud-operations/
+//				 2. https://docs.mongodb.com/manual/tutorial/write-scripts-for-the-mongo-shell/
+
 // 1. Connect to 'library' Database
 //	note: non-JS commands that Command Shell provides cannot be executed
 //			in a JS file. Thus 'use library' would not executed
