@@ -8,7 +8,10 @@
 //					 we have entered data into them.
 
 // 1. Connect to 'library' Database
-use library
+//	note: non-JS commands that Command Shell provides cannot be executed
+//			in a JS file. Thus 'use library' would not executed
+//		  instead, will run following equivalent JS code.
+var db = connect('127.0.0.1:27017/library')
 
 // 2. Create collections for 'library' Database
 db.createCollection('authors')
