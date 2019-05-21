@@ -1,5 +1,11 @@
 /* Database Connection */
-// Description: This script establishes a connection to our MongoDB Database
+// Description: This script does the following:
+//				 1. Access our 'library' database if it exists, 
+//					 or creates it if it does not exist.
+//				 2. Create collections for our 'library' database.
+//				 3. Enters data into each of our collections created in (2)
+//				 4. Views the collections in a pretty format to ensure
+//					 we have entered data into them.
 
 // 1. Connect to 'library' Database
 use library
