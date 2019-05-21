@@ -25,3 +25,8 @@ db.publishers.insert({'_id':'PH','name':'Prentice Hall, Inc.','city':'Upper Sadd
 db.books.insert({'_id':'9781491901632','title':'Hadoop: The Definitive Guide','author':'WhiteT','publisher':'OREILLY','year':2015})
 db.books.insert({'_id':'9781449344689','title':'MongoDB: The Definitive Guide','author':'ChodorowK','publisher':'OREILLY','year':2013})
 db.books.insert({'_id':'0201000237','title':'Algorithms and Data Structures','author':['AhoAV','HopcroftJE','UllmanJD'],'publisher':'A-W','year':1982})
+
+// 4. Show collections in pretty format
+db.authors.find().pretty()
+db.publishers.find().pretty()
+db.books.find().pretty()
