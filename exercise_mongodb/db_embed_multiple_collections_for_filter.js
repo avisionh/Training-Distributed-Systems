@@ -9,7 +9,9 @@
 //		Alfred V. Aho is an author.
 
 // A. See below
-db.books.aggregate([ 
+
+// print all items in a result cursor in mongo shell scripts
+cursor = db.books.aggregate([ 
 	{
 		// embed 'authors' collection into 'book' collection
 		//  so we can filter/match on 'Alfted V. Aho'
@@ -29,3 +31,7 @@ db.books.aggregate([
 	}
 // prettyify the output
 ]).pretty()
+
+while ( cursor.hasNext() ) {
+   printjson( cursor.next() );
+}
