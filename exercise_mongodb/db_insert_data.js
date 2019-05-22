@@ -22,7 +22,12 @@ print('* Created or accessed \'library\' database')
 db.createCollection('authors')
 db.createCollection('publishers')
 db.createCollection('books')
-print('\n* Created three collections:\n\t\'authors\'\n\t\'publishers\'\n\t\'books\'')
+
+print('\n* Created three collections:')
+var collections = db.getCollectionNames();
+for(var i = 0; i< collections.length; i++){    
+   print('\n\t - ' + collections[i]); 
+}
 
 // 3. Enter data into each collection
 db.authors.insert({'_id':'AhoAV','lname':'Aho','fname':'Alfred V.','yob':1941})
@@ -44,7 +49,6 @@ db.books.insert({'_id':'0201000237','title':'Algorithms and Data Structures','au
 print('\n* Inserted documents into collections')
 
 // 4. Show collections in pretty format
-var collections = db.getCollectionNames();
 for(var i = 0; i < collections.length; i++){   
 	// print the name of each collection 
 	print('\nDisplay \'' + collections[i] + '\' collection'); 
