@@ -16,7 +16,7 @@ public class SimpleObserver implements Observer<Integer> {
 	
 	@Override
 	public void onNext(Integer int_input) {
-		System.out.println("I pass in: " + int_input);
+		System.out.println("The square of the values I pass in: " + (int_input * int_input) );
 	}
 	
 }
