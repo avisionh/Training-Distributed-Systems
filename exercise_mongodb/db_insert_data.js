@@ -15,13 +15,14 @@
 //	note: non-JS commands that Command Shell provides cannot be executed
 //			in a JS file. Thus 'use library' would not executed
 //		  instead, will run following equivalent JS code.
-//var db = connect('0.0.0.0:27017/library')
 db = db.getSiblingDB('library')
+print('* Created or accessed \'library\' database')
 
 // 2. Create collections for 'library' Database
 db.createCollection('authors')
 db.createCollection('publishers')
 db.createCollection('books')
+print('* Created three collections:\n\t\'authors\'\n\t\'publishers\'\n\t\'books\'')
 
 // 3. Enter data into each collection
 db.authors.insert({'_id':'AhoAV','lname':'Aho','fname':'Alfred V.','yob':1941})
@@ -40,8 +41,24 @@ db.books.insert({'_id':'9781491901632','title':'Hadoop: The Definitive Guide','a
 db.books.insert({'_id':'9781449344689','title':'MongoDB: The Definitive Guide','author':'ChodorowK','publisher':'OREILLY','year':2013})
 db.books.insert({'_id':'0201000237','title':'Algorithms and Data Structures','author':['AhoAV','HopcroftJE','UllmanJD'],'publisher':'A-W','year':1982})
 
+print('* Inserted documents into collections')
+
 // 4. Show collections in pretty format
-db.authors.find().pretty()
-db.publishers.find().pretty()
-db.books.find().pretty()
+print('* Display \'authors\' collection')
+cursor = db.authors.find().pretty()
+while ( cursor.hasNext() ) {
+   printjson( cursor.next() );
+}
+
+print('* Display \'publishers\' collection')
+cursor = db.publishers.find().pretty()
+while ( cursor.hasNext() ) {
+   printjson( cursor.next() );
+}
+
+print('* Display \'publishers\' collection')
+cursor = db.books.find().pretty()
+while ( cursor.hasNext() ) {
+   printjson( cursor.next() );
+}
 
