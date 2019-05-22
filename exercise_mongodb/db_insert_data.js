@@ -15,7 +15,8 @@
 //	note: non-JS commands that Command Shell provides cannot be executed
 //			in a JS file. Thus 'use library' would not executed
 //		  instead, will run following equivalent JS code.
-var db = connect('127.0.0.1:27017/library')
+//var db = connect('0.0.0.0:27017/library')
+db = db.getSiblingDB('library')
 
 // 2. Create collections for 'library' Database
 db.createCollection('authors')
@@ -43,3 +44,4 @@ db.books.insert({'_id':'0201000237','title':'Algorithms and Data Structures','au
 db.authors.find().pretty()
 db.publishers.find().pretty()
 db.books.find().pretty()
+
