@@ -8,11 +8,9 @@ import rx.Observable;
 public class SimpleObservable {
 
 	public static void main(String[] args) {
-		List<String> topics = Arrays.asList("Statistics", 
-				"Machine-learning", "Big data", "Cloud computing", 
-				"Actors", "ReactiveX");
-		Observable<String> topicTitle = Observable.from(topics);
-		topicTitle.subscribe(new SimpleObserver());
+		List<Integer> values = Arrays.asList(1, 2, 3, 4, 5);
+		Observable<Integer> valueOutput = Observable.from(values);
+		valueOutput.subscribe(new SimpleObserver());
 	}
 
 }

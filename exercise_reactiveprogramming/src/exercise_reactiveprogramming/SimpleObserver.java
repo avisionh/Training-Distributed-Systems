@@ -2,7 +2,7 @@ package exercise_reactiveprogramming;
 
 import rx.Observer;
 
-public class SimpleObserver implements Observer<String> {
+public class SimpleObserver implements Observer<Integer> {
 
 	@Override
 	public void onCompleted() {
@@ -15,8 +15,8 @@ public class SimpleObserver implements Observer<String> {
 	}
 	
 	@Override
-	public void onNext(String text) {
-		System.out.println("I observed: " + text);
+	public void onNext(Integer int_input) {
+		System.out.println("I pass in: " + int_input);
 	}
 	
 }
