@@ -44,6 +44,18 @@ db.books.insert({'_id':'0201000237','title':'Algorithms and Data Structures','au
 print('* Inserted documents into collections')
 
 // 4. Show collections in pretty format
+var array_collections = ['authors', 'publishers', 'books']
+var mongoquery_db = 'db.'
+var mongoquery_find = '.find().pretty()'
+
+array_collections.forEach(function(element) {
+	print('\n* Display '+ element + ' collection');
+	cursor = mongoquery_db.concat(element, mongoquery_find)
+	while ( cursor.hasNext() ) {
+		printjson( cursor.next() );
+	};
+})
+
 print('* Display \'authors\' collection')
 cursor = db.authors.find().pretty()
 while ( cursor.hasNext() ) {
